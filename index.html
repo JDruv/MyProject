@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
-     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" type="image/gif" sizes="16x16">
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7867/7867852.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Include Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -47,9 +47,49 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        /* Messaggio di manutenzione */
+        .maintenance-alert {
+            background-color: #f44336;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            font-weight: bold;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 576px) {
+            .maintenance-alert {
+                font-size: 16px;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+
+        body {
+            margin-top: 50px; /* Distanza dal messaggio di manutenzione */
+        }
+
+        /* Contenuti */
+        .content {
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
+
+<!-- Messaggio di manutenzione -->
+<div class="maintenance-alert">
+    🚧 Il sito è ancora in costruzione! Torna presto per nuove funzionalita' e aggiornamenti! 🚧
+</div>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -81,7 +121,6 @@
 <section class="hero-section">
     <h1>Benvenuto nel mio sito!</h1>
     <p>Mi chiamo Druv, Scopri di più su di me e sui miei progetti.</p>
-    <b><p>🚧 Il sito è ancora in costruzione! Torna presto per nuove funzionalita' e aggiornamenti!. 🚧</p></b>
 </section>
 
 <!-- Sezione Contenuti -->
